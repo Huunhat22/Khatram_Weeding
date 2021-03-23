@@ -1,9 +1,10 @@
+debugger
 var today = new Date();
 
 var timer = function() {};
 timer.countdownDate = new Date();
 
-var weddingDate = new Date('2019/11/3')
+var weddingDate = new Date('2021/3/24')
 var diffDay = (weddingDate.getTime() - today.getTime()) / (24 * 3600 * 1000)
 timer.countdownDate.setDate( timer.countdownDate.getDate() + diffDay );
 
