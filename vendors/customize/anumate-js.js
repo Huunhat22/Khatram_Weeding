@@ -51,6 +51,8 @@
 		});
 
 		sr.reveal(`.col-md-4, .col-lg-6,
-            .col-sm-6, .list f_menu`, {
-    interval: 200
-})
+            .col-sm-6, .list f_menu,
+			.timer, .timer, .rounded-circle,
+			.logofooter`, {
+    		interval: 200
+		})

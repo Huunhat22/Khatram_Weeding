@@ -11,6 +11,10 @@ body {
   font-family: 'Pattaya', sans-serif !important;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .list {
   list-style: none;
   margin: 0px;
