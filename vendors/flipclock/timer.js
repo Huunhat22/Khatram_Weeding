@@ -1,4 +1,4 @@
-debugger
+
 var today = new Date();
 
 var timer = function() {};
