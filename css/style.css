@@ -310,7 +310,7 @@ button:focus {
 }
 
 .header_area + section, .header_area + row, .header_area + div {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .header_area.navbar_fixed .main_menu {
@@ -693,7 +693,7 @@ h1, h2, h3 {
 }
 
 .story_inner .story_text p {
-  max-width: 224px;
+  max-width: 233px;
   margin: auto;
   font-size: 14px;
   line-height: 24px;

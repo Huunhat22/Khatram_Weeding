@@ -1,5 +1,5 @@
 		// Set the date we're counting down to
-		var countDownDate = new Date("May 15, 2021 17:30:00").getTime();
+		var countDownDate = new Date("May 14, 2021 18:00:00").getTime();
 		
 		// Update the count down every 1 second
 		var x = setInterval(function() {
@@ -45,13 +45,13 @@
 		/*==================== SCROLL REVEAL ANIMATION ====================*/
 		const sr = ScrollReveal({
 			origin: 'top',
-			distance: '30px',
-			duration: 2000,
+			distance: '60px',
+			duration: 3000,
 			reset: true
 		});
 
 		sr.reveal(`.imageleft, .imageright`, {
-    		interval: 200
+    		interval: 300
 		})
 
 		new WOW().init();
