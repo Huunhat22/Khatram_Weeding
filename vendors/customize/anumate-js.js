@@ -50,9 +50,8 @@
 			reset: true
 		});
 
-		sr.reveal(`.col-md-4, .col-lg-6,
-            .col-sm-6, .list f_menu,
-			.timer, .timer, .rounded-circle,
-			.logofooter`, {
+		sr.reveal(`.imageleft, .imageright`, {
     		interval: 200
 		})
+
+		new WOW().init();
