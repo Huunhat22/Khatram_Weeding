@@ -11,6 +11,10 @@ body {
   font-family: 'Pattaya', sans-serif !important;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .list {
   list-style: none;
   margin: 0px;
@@ -78,6 +82,35 @@ button:focus {
     max-width: 1650px;
     margin: auto;
   }
+}
+/* Scroll Top */
+.scrolltop{
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3rem;
+  background: rgb(243 155 155 / 73%);
+  border-radius: .4rem;
+  z-index: 9999;
+  transition: .4s;
+  visibility: hidden;
+}
+.scrolltop:hover{
+  background-color: #D84C53;
+}
+
+.scrolltop__icon{
+  font-size: 1.8rem;
+  color: #FBFEFD;
+}
+
+/* Show scrolltop */
+.show-scroll{
+  visibility: visible;
+  bottom: 1.5rem;
 }
 
 /* Main Title Area css
@@ -277,7 +310,7 @@ button:focus {
 }
 
 .header_area + section, .header_area + row, .header_area + div {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .header_area.navbar_fixed .main_menu {
@@ -660,7 +693,7 @@ h1, h2, h3 {
 }
 
 .story_inner .story_text p {
-  max-width: 224px;
+  max-width: 233px;
   margin: auto;
   font-size: 14px;
   line-height: 24px;
@@ -790,8 +823,20 @@ h1, h2, h3 {
   transition: all 300ms ease;
 }
 
-.h_gallery_item img {
+/* .h_gallery_item img {
   width: 100%;
+} */
+
+.h_gallery_item img.small_image {
+  width: 100%;
+  object-fit: cover;
+  height: 123px;
+}
+
+.h_gallery_item img.large_image {
+  width: 100%;
+  object-fit: cover;
+  height: 225px;
 }
 
 .h_gallery_item .hover {
@@ -964,6 +1009,10 @@ h1, h2, h3 {
 ============================================================================================ */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+.timer{
+  position: relative;
+}
+
 .timer_inner {
   text-align: center;
   background: url(../img/timer-bg.png) no-repeat scroll center center;
@@ -998,7 +1047,24 @@ h1, h2, h3 {
   position: relative;
 }
 
-.timer_inner .timer:before {
+.imageleft {
+  background: url(../img/timer-shap-1.png) no-repeat;
+  height: 186px;
+  width: 234px;
+  position: absolute;
+  left: -100px;
+  bottom: -87px;
+}
+
+.imageright {
+  background: url(../img/timer-shap-2.png) no-repeat;
+  height: 147px;
+  width: 175px;
+  position: absolute;
+  right: -87px;
+  top: -72px;
+}
+/* .timer_inner .timer:before {
   content: "";
   background: url(../img/timer-shap-1.png) no-repeat;
   height: 186px;
@@ -1016,7 +1082,7 @@ h1, h2, h3 {
   position: absolute;
   right: -87px;
   top: -72px;
-}
+} */
 
 .timer_inner .timer .timer__section {
   -webkit-box-flex: 0;
@@ -1823,6 +1889,11 @@ h1, h2, h3 {
 @media (max-width: 991px) {
   .single-post-area .sidebar-widgets {
     padding-bottom: 0px;
+  }
+
+  .rounded-circle{
+    max-width: 210px;
+    height: 270px;
   }
 }
 
@@ -3781,7 +3852,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Footer Area css
 ============================================================================================ */
 .footer_inner {
-  background: #f9f9ff;
+  /* background: #f9f9ff; */
+  background: #fcfdff;
   text-align: center;
 }
 
@@ -3826,6 +3898,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer_inner p a {
   color: #F9BEC5;
+}
+
+.footer_inner .logofooter{
+  
 }
 
 .f_social {
