@@ -177,7 +177,7 @@
 		display: none;
 	}
 	.progress_item{
-		max-width: 383px;
+		/* max-width: 383px; */
 		margin: 0px auto 30px;
 	}
 	.progress_inner{
