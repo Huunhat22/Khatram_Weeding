@@ -876,10 +876,6 @@ button:focus {
   color: #ff2f92;
 }
 
-.progress_item .progress_text p {
-  margin-bottom: 20px;
-}
-
 .progress_item .progress_text .date a {
   display: block;
   font-size: 14px;
